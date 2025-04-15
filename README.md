@@ -2,8 +2,6 @@
 
 A curated collection of research papers focused on the **reasoning capabilities of Large Language Models (LLMs)**. This repository organizes and categorizes works that evaluate, benchmark, analyze, and summarize reasoning techniques used in LLMs.
 
-The goal is to support researchers, engineers, and enthusiasts in exploring the state of the art and emerging trends in LLM-based reasoning.
-
 ---
 
 ## 🗂 Categories
@@ -36,7 +34,11 @@ The goal is to support researchers, engineers, and enthusiasts in exploring the 
  <!-- 📝 Summary: One or two sentences describing the paper's contribution.-->
 
 ## Evaluation Benchmarks
-
+### General reasoning tasks
+- **[1.4 Million Open-Source Distilled Reasoning Dataset to Empower Large Language Model Training](https://arxiv.org/abs/2503.19633), [<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="20" alt="Hugging Face" />](https://huggingface.co/datasets/a-m-team/AM-DeepSeek-R1-Distilled-1.4M)**
+  *Han Zhao, Haotian Wang, Yiping Peng, Sitong Zhao, Xiaoyu Tian, Shuaiting Chen, Yunjie Ji, Xiangang Li* • *Preprint'25* 
+  📁 Tags: `evaluation`, `benchmarks`, `general-reasoning-task`
+  
 ### Code Generation
 - **[BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions](https://arxiv.org/abs/2406.15877), [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="22" alt="GitHub repo" />](https://github.com/bigcode-project/bigcodebench/tree/main), [[🏆Leaderboard]](https://bigcode-bench.github.io/))**
   *Terry Yue Zhuo, Minh Chien Vu, Jenny Chim, Han Hu, Wenhao Yu, Ratnadira Widyasari, Imam Nur Bani Yusuf, Haolan Zhan, Junda He, Indraneil Paul, Simon Brunner, Chen Gong, Thong Hoang, Armel Randy Zebaze, Xiaoheng Hong, Wen-Ding Li, Jean Kaddour, Ming Xu, Zhihan Zhang, Prateek Yadav, Naman Jain, Alex Gu, Zhoujun Cheng, Jiawei Liu, Qian Liu, Zijian Wang, Binyuan Hui, Niklas Muennighoff, David Lo, Daniel Fried, Xiaoning Du, Harm de Vries, Leandro Von Werra* • *ICLR 2025* 
@@ -85,6 +87,11 @@ The goal is to support researchers, engineers, and enthusiasts in exploring the 
 - **[Learning to reason with LLMs](https://openai.com/index/learning-to-reason-with-llms/)**  
   *OpenAI*
   📁 Tags: `evaluation`, `reasoning-quality`, `o1`
+
+- **[Evaluating the Generalization Capabilities of Large Language Models on Code Reasoning](https://arxiv.org/abs/2504.05518)**  
+  *Rem Yang, Julian Dai, Nikos Vasilakis, Martin Rinard* • *Preprint'25*  
+  📁 Tags: `evaluation`, `llm-reasoning`
+  
 ## Reasoning-quality
 ### Code Task
 - **[CodeMind: A Framework to Challenge Large Language Models for Code Reasoning](https://arxiv.org/html/2402.09664v3), [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="22" alt="GitHub repo" />](https://github.com/r-eval/REval)**  
@@ -98,14 +105,10 @@ The goal is to support researchers, engineers, and enthusiasts in exploring the 
 ### General Task
 - **[Quantifying the Reasoning Abilities of LLMs on Real-world Clinical Cases](https://arxiv.org/abs/2503.04691), [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="22" alt="GitHub repo" />](https://github.com/MAGIC-AI4Med/MedRBench)**  
   *Pengcheng Qiu, Chaoyi Wu, Shuyu Liu, Weike Zhao, Zhuoxia Chen, Hongfei Gu, Chuanjin Peng, Ya Zhang, Yanfeng Wang, Weidi Xie* • *Preprint'25*
-  📁 Tags: `evaluation`, `reasoning-quality`, `medical-aaplication`, `LLM-evaluation`
-  *key: The researchers created a "Reasoning Evaluator" system that objectively scores LLMs' reasoning based on:
-  Efficiency: evaluates whether each reasoning step contributes new insights toward the final answer rather than repeating or rephrasing previous results. It is calculated as the   proportion of effective reasoning steps within the entire reasoning prediction.
-  Factuality: assesses whether effective reasoning steps adhere to medical guidelines or factual knowledge. Similar to a ‘precision’ score, it calculates the proportion of factually correct steps among all predicted effective reasoning steps.
-  Completeness: measures how many reasoning steps explicitly marked in the raw case report are included in the generated content. Analogous to ‘recall’, it computes the proportion of mentioned reasoning steps among all ground-truth steps. While raw case reports may omit some steps, those included are considered essential reasoning evidence.*
-
-
-Five state-of-the-art reasoning LLMs were evaluated, including DeepSeek-R1, OpenAI-o3-mini, and Gemini-2.0-Flash Thinking
+  📁 Tags: `evaluation`, `reasoning-quality`, `medical-application`, `LLM-evaluation`
+- **[DeepSeek-R1 Thoughtology: Let's <think> about LLM Reasoning](https://arxiv.org/abs/2504.07128), [<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="20" alt="Hugging Face" />](https://huggingface.co/papers/2504.07128)**  
+  *Sara Vera Marjanović, Arkil Patel, Vaibhav Adlakha, Milad Aghajohari, Parishad BehnamGhader, Mehar Bhatia, Aditi Khandelwal, Austin Kraft, Benno Krojer, Xing Han Lù, Nicholas Meade, Dongchan Shin, Amirhossein Kazemnejad, Gaurav Kamath, Marius Mosbach, Karolina Stańczak, Siva Reddy* • *Preprint'25*
+  📁 Tags: `evaluation`, `reasoning-quality`, `LLM-evaluation`
 - **[Leveraging LLM Reasoning Enhances Personalized Recommender Systems](https://arxiv.org/abs/2408.00802)**  
   *Alicia Y. Tsai, Adam Kraft, Long Jin, Chenwei Cai, Anahita Hosseini, Taibai Xu, Zemin Zhang, Lichan Hong, Ed H. Chi, Xinyang Yi* • *ACL 2024*  
   📁 Tags: `evaluation`, `reasoning-quality`, `personalized recommendation systems (RecSys)`
