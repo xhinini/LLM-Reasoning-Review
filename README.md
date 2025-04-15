@@ -99,6 +99,13 @@ The goal is to support researchers, engineers, and enthusiasts in exploring the 
 - **[Quantifying the Reasoning Abilities of LLMs on Real-world Clinical Cases](https://arxiv.org/abs/2503.04691), [<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="22" alt="GitHub repo" />](https://github.com/MAGIC-AI4Med/MedRBench)**  
   *Pengcheng Qiu, Chaoyi Wu, Shuyu Liu, Weike Zhao, Zhuoxia Chen, Hongfei Gu, Chuanjin Peng, Ya Zhang, Yanfeng Wang, Weidi Xie* • *Preprint'25*
   📁 Tags: `evaluation`, `reasoning-quality`, `medical-aaplication`, `LLM-evaluation`
+  *key: The researchers created a "Reasoning Evaluator" system that objectively scores LLMs' reasoning based on:
+  Efficiency: evaluates whether each reasoning step contributes new insights toward the final answer rather than repeating or rephrasing previous results. It is calculated as the   proportion of effective reasoning steps within the entire reasoning prediction.
+  Factuality: assesses whether effective reasoning steps adhere to medical guidelines or factual knowledge. Similar to a ‘precision’ score, it calculates the proportion of factually correct steps among all predicted effective reasoning steps.
+  Completeness: measures how many reasoning steps explicitly marked in the raw case report are included in the generated content. Analogous to ‘recall’, it computes the proportion of mentioned reasoning steps among all ground-truth steps. While raw case reports may omit some steps, those included are considered essential reasoning evidence.*
+
+
+Five state-of-the-art reasoning LLMs were evaluated, including DeepSeek-R1, OpenAI-o3-mini, and Gemini-2.0-Flash Thinking
 - **[Leveraging LLM Reasoning Enhances Personalized Recommender Systems](https://arxiv.org/abs/2408.00802)**  
   *Alicia Y. Tsai, Adam Kraft, Long Jin, Chenwei Cai, Anahita Hosseini, Taibai Xu, Zemin Zhang, Lichan Hong, Ed H. Chi, Xinyang Yi* • *ACL 2024*  
   📁 Tags: `evaluation`, `reasoning-quality`, `personalized recommendation systems (RecSys)`
